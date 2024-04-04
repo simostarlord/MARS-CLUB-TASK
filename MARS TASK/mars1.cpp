@@ -1,14 +1,14 @@
 #include <iostream>
 #include <functional>
 
-// Define a custom data type
+
 struct CustomData {
     int value1;
     double value2;
 };
 
 int main() {
-    // Create a variable to store the custom data type using std::function
+   
     std::function<CustomData()> getData = []() -> CustomData {
         CustomData data;
         data.value1 = 10;
@@ -16,7 +16,7 @@ int main() {
         return data;
     };
 
-    // Use the stored lambda function to retrieve the custom data
+   
     CustomData retrievedData = getData();
 
     // Display the retrieved custom data
