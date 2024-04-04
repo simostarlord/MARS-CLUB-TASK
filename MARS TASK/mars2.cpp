@@ -23,7 +23,7 @@ public:
     }
 };
 
-class MaRS {
+class mars {
 private:
     std::vector<Person> members;
 
@@ -33,34 +33,34 @@ public:
     }
 
     void displayMembers() const {
-        std::cout << "MaRS Club Members:\n";
+        std::cout << "mars Club Members:\n";
         for (const auto& member : members) {
             member.displayInfo();
         }
     }
 
-    void allowIntraCommunication() const {
-        std::cout << "Intra Communication within MaRS Club Members is allowed.\n";
+    void Comm() const {
+        std::cout << "Intra Communication within mars Club Members is allowed.\n";
     }
 };
 
 int main() {
-    MaRS marsClub;
+    mars mc;
 
     // Adding members
-    Person p1("Alice", 100);
-    Person p2("Bob", 80);
-    Person p3("Charlie", 120);
+    Person p1("rahul", 100);
+    Person p2("caitlin", 80);
+    Person p3("varsha", 120);
 
-    marsClub.addMember(p1);
-    marsClub.addMember(p2);
-    marsClub.addMember(p3);
+    mc.addMember(p1);
+    mc.addMember(p2);
+    mc.addMember(p3);
 
     // Displaying members
-    marsClub.displayMembers();
+    mc.displayMembers();
 
     // Intra communication
-    marsClub.allowIntraCommunication();
+    mc.Comm();
 
     return 0;
 }
