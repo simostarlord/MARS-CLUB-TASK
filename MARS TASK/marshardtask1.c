@@ -1,3 +1,7 @@
+//mars task - hard 1 c
+//ec23b1038 caitlin 
+
+
 #include <stdio.h>
 
 #define N 4
